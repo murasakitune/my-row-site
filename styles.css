@@ -1,0 +1,132 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+}
+
+header .logo {
+    height: 40px;
+}
+
+header nav {
+    margin-left: auto;
+}
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.page {
+    /* ページごとのスタイルが必要な場合に追加 */
+}
+
+.mini-title {
+    padding-left: 10px;
+}
+
+.intro-list {
+    list-style:none;
+}
+
+.pageA ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pageA li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.stats, .buttons, .farm-grid, .upgrades {
+    margin-top: 20px;
+}
+
+.stats p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.buttons button:hover {
+    background-color: #45a049;
+}
+
+.farm-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.farm-grid div {
+    width: 60px;
+    height: 60px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.farm-grid div:hover {
+    background-color: #e0e0e0;
+}
+
+.upgrades table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.upgrades th, .upgrades td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.upgrades th {
+    background-color: #f2f2f2;
+}
+
+.upgrade-btn {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.upgrade-btn:hover {
+    background-color: #0b7dda;
+}

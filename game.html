@@ -1,0 +1,58 @@
+<!-- game.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>農業クリッカーゲーム</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section id="pageB" class="page">
+            <h1>農業クリッカーゲーム</h1>
+            <div class="stats">
+                <p>種: <span id="seeds">0</span></p>
+                <p>作物: <span id="crops">0</span></p>
+                <p>ゴールド: <span id="gold">100</span></p>
+            </div>
+            <div class="buttons">
+                <button id="buySeed">購入</button>
+                <button id="grow">成長</button>
+                <button id="sellCrops">売却</button>
+            </div>
+            <div class="farm-grid">
+                <!-- 畑パネル (動的に生成される) -->
+            </div>
+            <table class="upgrades">
+                <thead>
+                    <tr>
+                        <th>アップグレード</th>
+                        <th>効果</th>
+                        <th>価格</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>収益増加</td>
+                        <td>作物売却時のゴールド増加</td>
+                        <td><span id="upgradeCost1">50</span></td>
+                        <td><button class="upgrade-btn" data-upgrade="1">アップグレード</button></td>
+                    </tr>
+                    <tr>
+                        <td>成長速度向上</td>
+                        <td>作物成長確率向上</td>
+                        <td><span id="upgradeCost2">100</span></td>
+                        <td><button class="upgrade-btn" data-upgrade="2">アップグレード</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
